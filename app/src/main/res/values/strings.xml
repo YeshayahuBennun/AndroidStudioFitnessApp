@@ -12,9 +12,9 @@
     <string name="go_button">Go!</string>
     <string name="tray_again_string">Try again</string>
     <string name="about_fitness_app">In this app we will learn about navigation.\n\nnavigation will give us a great view of our app</string>
-    
+
     <string name="about_app_description">About the fitness app</string>
     <string name="about_string">About</string>
 
-    
+
 </resources>

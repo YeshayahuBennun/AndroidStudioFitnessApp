@@ -18,5 +18,22 @@
         android:id="@+id/exerciseFragment"
         android:name="com.ybennun.fitnessapp.ExerciseFragment"
         android:label="fragment_exercise"
-        tools:layout="@layout/fragment_exercise" />
+        tools:layout="@layout/fragment_exercise" >
+        <action
+            android:id="@+id/action_exerciseFragment_to_wellDoneFragment2"
+            app:destination="@id/wellDoneFragment2" />
+        <action
+            android:id="@+id/action_exerciseFragment_to_tryAgainFramgent"
+            app:destination="@id/tryAgainFramgent" />
+    </fragment>
+    <fragment
+        android:id="@+id/wellDoneFragment2"
+        android:name="com.ybennun.fitnessapp.WellDoneFragment"
+        android:label="fragment_well_done"
+        tools:layout="@layout/fragment_well_done" />
+    <fragment
+        android:id="@+id/tryAgainFramgent"
+        android:name="com.ybennun.fitnessapp.TryAgainFramgent"
+        android:label="fragment_try_again_framgent"
+        tools:layout="@layout/fragment_try_again_framgent" />
 </navigation>

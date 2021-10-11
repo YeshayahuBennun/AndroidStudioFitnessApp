@@ -21,19 +21,33 @@
         tools:layout="@layout/fragment_exercise" >
         <action
             android:id="@+id/action_exerciseFragment_to_wellDoneFragment2"
-            app:destination="@id/wellDoneFragment2" />
+            app:destination="@id/wellDoneFragment2"
+            app:popUpTo="@id/exerciseFragment"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_exerciseFragment_to_tryAgainFramgent"
-            app:destination="@id/tryAgainFramgent" />
+            app:destination="@id/tryAgainFramgent"
+            app:popUpTo="@id/exerciseFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/wellDoneFragment2"
         android:name="com.ybennun.fitnessapp.WellDoneFragment"
         android:label="fragment_well_done"
-        tools:layout="@layout/fragment_well_done" />
+        tools:layout="@layout/fragment_well_done" >
+        <action
+            android:id="@+id/action_wellDoneFragment2_to_exerciseFragment"
+            app:destination="@id/exerciseFragment"
+            app:popUpTo="@id/exerciseFragment" />
+    </fragment>
     <fragment
         android:id="@+id/tryAgainFramgent"
-        android:name="com.ybennun.fitnessapp.TryAgainFramgent"
+        android:name="com.ybennun.fitnessapp.TryAgainFragment"
         android:label="fragment_try_again_framgent"
-        tools:layout="@layout/fragment_try_again_framgent" />
+        tools:layout="@layout/fragment_try_again_framgent" >
+        <action
+            android:id="@+id/action_tryAgainFramgent_to_exerciseFragment"
+            app:destination="@id/exerciseFragment"
+            app:popUpTo="@id/exerciseFragment" />
+    </fragment>
 </navigation>
